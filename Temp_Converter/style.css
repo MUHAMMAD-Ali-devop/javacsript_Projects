@@ -1,0 +1,25 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:column;
+    margin:0px;
+    color:white;
+    background-color:#050f3d;
+  }
+ #main{
+    display: flex;
+    justify-content: center;
+margin: 50px;
+    height: 100%;
+    /* border: 3px solid green; */
+ }
+  input{
+    height: 70px;
+    border-radius: 10px;
+    font-size: 20px;
+    background-color: transparent;
+    color:rgb(58, 172, 58);
+    text-align: center;
+  }
+  

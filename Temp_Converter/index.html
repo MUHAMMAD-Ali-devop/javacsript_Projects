@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="R.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- -----Code body----- -->
+    <!-- -----HEADER------ -->
+    <h1 style="margin:50px;color: rgb(58, 172, 58);">UNIT CONVERSION</h1>
+    <div id="main">
+        <!-- <section>
+            <h1>UNIT Conversion</h1>
+        </section>
+        <div>
+            <label for="temp"></label>
+            <select name="temp" id="temp" style="background-color:rgb(25, 90, 25); color: white;">
+                <option style="background-color: aqua;">
+                    <button>Tool For Temprature Conversion</button>
+                </option>
+            </select>
+        </div><br><br> -->
+
+        <!-- DROP DOWNS -->
+        <!-- --DROPDOWN NO 1-- -->
+        <label for="select"></label>
+        <select name="temp_convert" id="select"
+            style="background-color:rgb(10, 79, 10); color: white;padding: 5px;margin: 10px; 
+            border-radius: 10px;height: 70px;width: 200px;">
+            <option id="opt1" value="CELSIUS">CELSIUS</option>
+            <!-- <option id="opt2" value="FAHRENHITE">FAHRENHITE</option>
+            <option id="opt3" value="KELVIN">KELVIN</option> -->
+        </select>
+
+        <h3 style="color:rgb(58, 172, 58);"><i>__TO__</i></h3>
+
+        <!-- --DROPDOWN NO 2-- -->
+        <label for="select"></label>
+        <select name="temp_convert" id="select"
+            style="background-color:rgb(10, 79, 10); color: white;margin: 10px;
+             border-radius: 10px;height: 70px;width: 200px;">
+            <option id="opt4" value="FAHRENHITE">FAHRENHITE</option>
+            <!-- <option id="opt5" value="KELVIN">KELVIN</option>
+            <option id="opt6" value="CELSIUS">CELSIUS</option> -->
+        </select>
+    </div><br><br><br>
+    <!-- --TEXT SECTION-- -->
+    <div style="display: flex;flex-direction: row;margin:px;">
+        <div style="margin-right:200px;">
+            <h3 style="color:rgb(58, 172, 58);">INPUT</h3>
+        </div>
+        <div>
+            <h3 style="color:rgb(58, 172, 58);">OUTPUT</h3>
+        </div>
+    </div>
+    <!-- ---NEW SECTION--- -->
+    <div style="display: flex;flex-direction: row;margin-left:50px;
+    margin-right:50px;margin-bottom:50px;">
+        <!-- --INPUT SECTION-- -->
+        <div style="margin: 4px;">
+            <input type="number" value="0" id="input"></input>
+        </div>
+        <!-- --OUTPUT SECTION-- -->
+        <div style="margin: 4px;">
+
+            <input type="number" value="0" id="output"></input>
+        </div>
+    </div>
+    <script src=script.js></script>
+</body>
+
+</html>
