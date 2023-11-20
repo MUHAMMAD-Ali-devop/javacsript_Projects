@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>calculator</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="calculator">
+
+      <form>
+        <input id="inpt" type="number" name="jee" placeholder="0">
+
+
+
+        <div>
+          <input type="button" id="sin" value="sin">
+          <input type="button" id="cos" value="cos">
+          <input type="button" id="tan" value="tan">
+          <input type="button" onclick="jee.value = (jee.value * 180/Math.PI).toFixed(2)+' deg'" value="Deg">
+        </div>
+        <div>
+          <input  class="clr"  onclick="jee.value =''" type="button" value="Ac" >
+          <input class="clr"  onclick="jee.value = jee.value.toString().slice(0 ,-1)" type="button" value="C" >
+          <input type="button" value="/" class="btn1">
+          <input type="button" value="*" class="btn1">
+        </div>
+        <div>
+          <input type="button" onclick="jee.value +='7'" value="7">
+          <input type="button" onclick="jee.value +='8'" value="8">
+          <input type="button" onclick="jee.value +='9'" value="9">
+          <input type="button" onclick="jee.value +='-'" value="-" class="btn1">
+        </div>
+        <div>
+          <input type="button" onclick="jee.value +='4'" value="4">
+          <input type="button" onclick="jee.value +='5'" value="5">
+          <input type="button" onclick="jee.value +='6'" value="6">
+          <input type="button" onclick="jee.value +='+'" value="+" class="btn1" >+</input type="button">
+        </div>
+        <div>
+          <input type="button" onclick="jee.value +='1'" value="1">
+          <input type="button" onclick="jee.value +='2'" value="2">
+          <input type="button" onclick="jee.value +='3'" value="3">
+          <input type="button" onclick="jee.value = Math.log10(jee.value)" class="btn1" value="log">
+        </div>
+        <div>
+          <input type="button" onclick="jee.value +='0'" value="0" style="width: 113px;">
+          <input type="button" onclick="jee.value +='.'" value=".">.</input type="button">
+          <input type="button" onclick="jee.value = eval(jee.value)" value="=" style=" background-color:rgb(37, 92, 107);">
+        </div>
+      </form>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
