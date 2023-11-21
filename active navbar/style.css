@@ -1,0 +1,13 @@
+a{
+    text-decoration: none;
+   
+}
+li{
+    display: inline;   
+    font-size: 15px;
+    margin-left:10px;
+    margin-right:10px;
+}
+a{
+    padding: 10px;
+}
