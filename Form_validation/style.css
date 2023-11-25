@@ -1,0 +1,48 @@
+body{
+    height: 100%;
+    width: 100%;
+    background: fixed;
+   text-align: center;
+    background-image: radial-gradient(circle , rgb(16, 101, 101), rgb(158, 221, 221) );
+}
+#dav{
+    margin: 10%;
+    border: none;
+    border-radius: 10px;
+    background-color: white;
+    padding: 50px;
+    display: inline-block;
+}
+#dav:hover{
+    box-shadow: -10px 10px  rgb(136, 230, 230);
+}
+input{
+    margin-top:20px;
+    padding-left: 10px;
+    height: 30px;
+    width: 250px;
+    border-radius:5px ;
+    text-decoration: none;
+    border:1px solid black;
+    outline: none;
+}
+#btn1{
+    height: 30px;
+    width: 250px;
+    border-radius:5px ;
+    text-decoration: none;
+    border:1px solid black;
+    outline: none;
+    font-weight: bolder;
+    color: antiquewhite;
+
+    background-color: rgb(15, 120, 120);
+}
+#btn1:hover{
+    cursor: pointer;
+    margin:13px;
+}
+.main{
+    display: flex;
+    align-items: center;
+}
