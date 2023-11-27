@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>image_slider</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    body{
+        margin: 0px;
+    }
+   .slide-container{
+    position: relative;
+   }
+   .slides{
+    display: none;
+   }
+    .slides img{
+        width: 100%;
+        height:627px;
+        
+    }
+    .Caption{
+        font-size: 30px;
+        font-weight: bold;
+        margin: 0px;
+          position: absolute;
+        bottom: 0px;
+        width: 100%;
+        text-align: center;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 10px 0px;
+    }
+    .arrow{
+        position: absolute;
+        top: 45%;
+        font-size: 20px;
+        font-weight: bold;
+        background-color: white;
+        color: black;
+        width: 30px;
+        height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+        border-radius: 60%;
+        cursor: pointer;
+    
+    }
+    #next{
+        right: 10px;
+    }
+    #prev{
+        left: 10px;
+        
+    }
+</style>
+<body>
+<div class="slide-container">
+    <div class="slides">
+        <img src="img/11.jpg" alt="first-img">
+        <p class="Caption">Image 1</p>
+    </div>
+    <div class="slides">
+        <img src="img/2.jpg" alt="second-img">
+        <p class="Caption">Image 2</p>
+    </div>
+    <div class="slides">
+        <img src="img/12.jpg" alt="third-img">
+        <p class="Caption">Image 3</p>
+    </div>
+    <div class="slides">
+        <img src="img/4.jpg" alt="fourth-img">
+        <p class="Caption">Image 4</p>
+    </div>
+    <div class="slides">
+        <img src="img/nature-1686808887.jpg" alt="fourth-img">
+        <p class="Caption">Image 5</p>
+    </div>
+    <span class="arrow" id="prev"><i class="fa-solid fa-less-than"></i></span>
+    <span class="arrow" id="next"><i class="fa-solid fa-greater-than"></i></span>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
