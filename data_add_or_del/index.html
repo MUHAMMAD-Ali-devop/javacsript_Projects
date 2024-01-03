@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+   <style>
+    body{
+        height: 100%;
+        width: 90vw;
+        padding: 3% 3%;
+        background-color: black;
+    }
+    .container1{
+        width: 100%;
+        height: 100%;
+        padding:2% 2%;
+        border-radius: 10px;
+        background-color: rgb(88, 180, 255);
+        display: flex;
+        
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+   input{
+    margin: 7px 0;
+    height: 30px;
+    width: 250px;
+    padding-left: 10px;
+   }
+   #ag{
+    margin-left:44px;
+   }
+   .container2{
+    width: 100%;
+        height:100%;
+        padding:5% 2%;
+        border-radius: 10px;
+        background-color: rgb(42, 107, 163);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+   }
+   #btn{
+  background-image: linear-gradient(to right, rgb(176, 110, 110),rgb(233, 178, 75),rgb(192, 192, 121),rgb(93, 203, 93),rgb(138, 138, 198),rgb(164, 115, 199),violet);
+color: black;
+cursor: pointer;
+border: none;
+border-radius: 10px;
+font-weight: bold;
+   }
+
+   th{
+    border: 1px solid black;
+    padding: 10px 50px;
+    font-size:18px;
+    font-weight: bold;
+    
+   }
+   tr:nth-child(even){background-color: #b4b2b2;}
+ td{
+    border: 1px solid black;
+    padding: 10px 50px;
+    border-radius: 10px;
+    text-align: center;
+    font-size:18px;
+ }
+#btn1{
+    background-color: red;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    width: 80px;
+    height: 25px;
+    cursor: pointer;
+}
+
+   </style>
+</head>
+<body>
+    <div class="container1">
+<h1>Employee data</h1>
+<div>
+    <label for="#fn">Your_First_name :</label>
+<input id="fn" type="text" placeholder="Enter your first_name">
+<li id="ufn" style="font-size: 13px; font-weight: bold; color: red; display: none; text-align: center;"></li>
+</div>
+<div>
+    <label for="#ln">Your_Last_name :</label>
+<input id="ln" type="text" placeholder="Enter your last_name">
+<li id="uln" style="font-size: 13px; font-weight: bold; color: red; display: none; text-align: center;"></li>
+</div>
+<div>
+    <label for="#ag">Your_Age :</label>
+<input id="ag" type="number" placeholder="Enter your_age">
+<li id="uag" style="font-size: 13px; font-weight: bold; color: red; display: none; text-align: center; margin: 0px;padding: 0px;"></li>
+</div>
+<div>
+    <label for="#ey">Experience_Year :</label>
+<input id="ey" type="number" placeholder="Enter your experience_years" >
+<li id="uey" style="font-size: 13px; font-weight: bold; color: red; display: none; text-align: center;"></li>
+</div>
+<div>
+<input id="btn" type="button" value="Add">
+</div>
+    </div>
+<div class="container2">
+<table id="tb">
+    <tr>
+        <th>First_name</th>
+        <th>Last_name</th>
+        <th>Age</th>
+        <th>Experience</th>
+        <th>Delete</th>
+       
+    </tr>
+    
+</table>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
